@@ -1,0 +1,113 @@
+/* Post Job Page Styles */
+
+/* General Container */
+.post-job-container {
+    max-width: 800px; /* Adjusted for a more compact layout */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Reduced gap for more compact form */
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Add padding-left for icon space */
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  }
+  
+  .input-group input::placeholder,
+  .input-group select::placeholder,
+  .input-group textarea::placeholder {
+    color: #a0aec0; /* Adjust placeholder color */
+  }
+  
+  /* Reduce icon size and add padding */
+  .input-group svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 12px; /* Position icons towards the left */
+    color: #4a5568;
+  }
+  
+  /* Styling for the input wrapper */
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+    min-height: 80px; /* Set a minimum height for the textarea */
+  }
+  
+  /* Focus effect */
+  .input-group input:focus,
+  .input-group select:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(55, 148, 255, 0.3);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 10px 16px; /* Adjusted padding for more compact button */
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .post-job-container {
+      padding: 20px;
+    }
+  
+    .input-group {
+      flex-direction: column;
+    }
+  
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+      width: 100%;
+    }
+  }
+  

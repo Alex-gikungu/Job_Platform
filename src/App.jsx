@@ -1,16 +1,31 @@
-// src/App.jsx
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
-function App() {
+import Home from './pages/Home';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+import JobListings from './pages/JobListings';
+import PostJob from './pages/PostJob';
+import Footer from './components/Footer';
+
+const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* You can add more routes like /jobs, /post-job, etc */}
-      </Routes>
+      <Navbar />
+      <div className="p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/jobs" element={<JobListings />} />
+          <Route path="/post-job" element={<PostJob />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+         
+        </Routes>
+      </div>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

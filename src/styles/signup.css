@@ -1,0 +1,93 @@
+/* styles/signup.css */
+
+.signup-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .signup-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+  }
+  
+  .user-type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .user-type-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: #94a3b8;
+    transition: all 0.3s ease;
+  }
+  
+  .user-type-button.active {
+    background-color: #2563eb;
+  }
+  
+  .user-type-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .signup-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #2563eb;
+  }
+  
+  .input-group svg {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #1e40af;
+  }
+  
